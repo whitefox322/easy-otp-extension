@@ -1,45 +1,79 @@
-.App {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+.popup {
   text-align: center;
   height: 100%;
   padding: 10px;
   background-color: #282c34;
 }
 
-.App-logo {
-  height: 30vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.text {
   color: white;
+  font-size: 13px;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  display: flex;
+  padding-top: 15px;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  width: -webkit-fill-available;
+}
+
+.btn {
+  color: white;
+  border-radius: 2px;
+}
+
+.btn:last-child {
+  margin-left: 10px;
+}
+
+.update {
+  background-color: #009CA3;
+  border-color: #00696E;
+}
+
+.insert {
+  background-color: #009E2C;
+  border-color: #00671F;
+}
+
+.remove {
+  background-color: #DC3E00;
+  border-color: #932B00;
+}
+
+.error {
+  color: #DC3E00;
+  font-size: 13px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.preview {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.holder {
+  background-color: #FB8FFD;
+  color: #320C4F;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  outline: unset;
+  height: 20px;
+}
+
+.copied {
+  color: #009E2C;
+  font-size: 13px;
+}
+
+.warning {
+  color: #BCB200;
+  font-size: 13px;
 }

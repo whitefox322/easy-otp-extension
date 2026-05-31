@@ -1,12 +1,8 @@
 {
-  "name": "chrome-extension-boilerplate-react",
-  "version": "4.4.0",
-  "description": "A chrome extension boilerplate built with React 17, Webpack 5, and Webpack Dev Server 4",
+  "name": "easy-otp-ext",
+  "version": "0.0.1",
+  "description": "Generate OTP code based on your 2FA token",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lxieyang/chrome-extension-boilerplate-react.git"
-  },
   "scripts": {
     "build": "node utils/build.js",
     "start": "node utils/webserver.js",
@@ -14,6 +10,7 @@
   },
   "dependencies": {
     "@hot-loader/react-dom": "^17.0.2",
+    "@levminer/speakeasy": "^1.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hot-loader": "^4.13.1"
@@ -29,8 +26,10 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.3.0",
     "babel-preset-react-app": "^10.0.1",
+    "buffer": "^6.0.3",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^7.0.0",
+    "crypto-browserify": "^3.12.0",
     "css-loader": "^6.7.2",
     "eslint": "^8.27.0",
     "eslint-config-react-app": "^7.0.1",
@@ -47,10 +46,13 @@
     "prettier": "^2.7.1",
     "sass-loader": "^13.2.0",
     "source-map-loader": "^3.0.1",
+    "stream-browserify": "^3.0.0",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.6",
     "ts-loader": "^9.4.1",
     "typescript": "^4.9.3",
+    "url": "^0.11.0",
+    "util": "^0.12.5",
     "webpack": "^5.75.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
